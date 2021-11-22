@@ -57,14 +57,14 @@ export default {
 
 .route-enter-from
   opacity: 0
-  transform: translate(10rem)
+  transform: translateX(10rem)
 
 .route-enter-active
   transition: (all 0.5s ease-out)
 
 .route-leave-to
   opacity: 0
-  transform: translateY(10rem)
+  transform: translateX(-10rem)
 
 .route-leave-active
   transition: (all 0.5s ease-in)
