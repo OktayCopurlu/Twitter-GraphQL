@@ -4,8 +4,8 @@ import router from "./router";
 import store from "./store";
 import ApolloClient from "apollo-boost";
 import VueApollo from "vue-apollo";
-const serverURL = "http://localhost:4000/graphql";
-// const serverURL ="https://twitter-server-graphql.hserokuapp.com/graphql";
+// const serverURL = "http://localhost:4000/graphql";
+const serverURL ="https://twitter-server-graphql.herokuapp.com/graphql";
 export const defaultClient = new ApolloClient({
   uri: serverURL,
 });
