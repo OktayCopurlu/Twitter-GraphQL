@@ -48,7 +48,7 @@ export default {
   },
   computed: {
     tweets() {
-      const tweets = this.$store.state.tweets;
+      const tweets = this.$store.state.tweet.tweets;
       return tweets;
     },
   },

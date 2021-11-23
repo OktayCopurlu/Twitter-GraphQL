@@ -17,12 +17,12 @@
 <script>
 export default {
   beforeMount() {
-    const _id = this.$store.state.userId;
+    const _id = this.$store.state.user.userId;
     this.$store.dispatch("userLikedTweets", { _id });
   },
   computed: {
     userLikeTweets() {
-      const tweets = this.$store.state.userLikedTweets;
+      const tweets = this.$store.state.tweet.userLikedTweets;
       return tweets;
     },
   },

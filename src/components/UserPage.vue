@@ -15,18 +15,19 @@
 <script>
 export default {
   beforeMount() {
-    const user = this.$store.state.userId;
+    const user = this.$store.state.user.userId;
     this.$store.dispatch("getUserTweets", { user });
-    const _id = this.$store.state.userId;
+    const _id = this.$store.state.user.userId;
     this.$store.dispatch("userLikedTweets", { _id });
   },
   computed: {
     tweets() {
-      const tweets = this.$store.state.tweets;
+      console.log(this.$store)
+      const tweets = this.$store.tweet.state.tweets;
       return tweets;
     },
     userLikeTweets() {
-      const tweets = this.$store.state.userLikedTweets;
+      const tweets = this.$store.tweet.state.userLikedTweets;
       return tweets;
     },
   },
